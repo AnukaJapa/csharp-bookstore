@@ -28,20 +28,22 @@
 
 //chiedi all'utente informazioni
 
-Console.WriteLine("inserisci il titolo del libro");
-string titolo = Console.ReadLine();
+//Console.WriteLine("inserisci il titolo del libro");
+//string titolo = Console.ReadLine();
 
-Console.WriteLine("inserisci l'autore del libro");
-string autore = Console.ReadLine();
+//Console.WriteLine("inserisci l'autore del libro");
+//string autore = Console.ReadLine();
 
-Console.WriteLine("inserisic isbn");
-int isbn = int.Parse(Console.ReadLine());
+//Console.WriteLine("inserisic isbn");
+//int isbn = int.Parse(Console.ReadLine());
 
-Console.WriteLine("inserisci il numero delle pagine");
-int numerodellepagine = int.Parse(Console.ReadLine());
+//Console.WriteLine("inserisci il numero delle pagine");
+//int numerodellepagine = int.Parse(Console.ReadLine());
 
 Console.WriteLine("inserisci il peso del libro");
 float pesodellibro = float.Parse(Console.ReadLine());
+Console.WriteLine(pesodellibro);
+
 
 Console.WriteLine("inserisci dimensioni del libro, altezza, lunghezza e profondità");
 float larghezza = float.Parse(Console.ReadLine());
@@ -61,17 +63,17 @@ Console.WriteLine("è flessibile la copertina? si o no");
 string flessibile = Console.ReadLine();
 
 
-Console.WriteLine(@$"--------------LIBRO DI OGGI:{titolo} di {autore}------------
-informazioni generiche:
-ISBN: {isbn}
-Numero delle pagine: {numerodellepagine}
-Peso del libro: {pesodellibro}kg
-Dimensioni del libro: {larghezza}cm x {lunghezza}cm x {profont
-}cm
+//Console.WriteLine(@$"--------------LIBRO DI OGGI:{titolo} di {autore}------------
+//informazioni generiche:
+//ISBN: {isbn}
+//Numero delle pagine: {numerodellepagine}
+//Peso del libro: {pesodellibro}kg
+//Dimensioni del libro: {larghezza}cm x {lunghezza}cm x {profondità
+//}cm
 
-Informazioni Amazon:
-Numero di recensioni: {numerodirecensioni} recensioni
-Valutazione media: {valutazionemedia} stelline
-Kindle disponibile: {kindle}
-Copertina flessibile disponibile: {flessibile}
-");
+//Informazioni Amazon:
+//Numero di recensioni: {numerodirecensioni} recensioni
+//Valutazione media: {valutazionemedia} stelline
+//Kindle disponibile: {kindle}
+//Copertina flessibile disponibile: {flessibile}
+//");
