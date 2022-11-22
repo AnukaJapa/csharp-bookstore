@@ -8,7 +8,7 @@ Console.WriteLine("inserisci l'autore del libro");
 string autore = Console.ReadLine();
 
 Console.WriteLine("inserisic isbn");
-int isbn = int.Parse(Console.ReadLine());
+string isbn = Console.ReadLine();
 
 Console.WriteLine("inserisci il numero delle pagine");
 int numerodellepagine = int.Parse(Console.ReadLine());

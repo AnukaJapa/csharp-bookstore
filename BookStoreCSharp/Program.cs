@@ -28,52 +28,54 @@
 
 //chiedi all'utente informazioni
 
-//Console.WriteLine("inserisci il titolo del libro");
-//string titolo = Console.ReadLine();
+string titolo = "Clean Code";
+string autore = "Robert C. Martin";
+string isbn = "9780132350884";
 
-//Console.WriteLine("inserisci l'autore del libro");
-//string autore = Console.ReadLine();
+int numerodellepagine = 334;
+int pesodellibro = 3;
 
-//Console.WriteLine("inserisic isbn");
-//int isbn = int.Parse(Console.ReadLine());
+float larghezza = 12.3f;
+float lunghezza = 23.4f;
+float profondità = 23.4f;
 
-//Console.WriteLine("inserisci il numero delle pagine");
-//int numerodellepagine = int.Parse(Console.ReadLine());
+int numerodirecensioni = 234;
 
-Console.WriteLine("inserisci il peso del libro");
-float pesodellibro = float.Parse(Console.ReadLine());
-Console.WriteLine(pesodellibro);
+float valutazionemedia = 3.3f;
+
+bool kindle = false;
+string kindleDisponibilità;
+
+bool flessibile = true;
+string flessibileDisponibilità;
+if (kindle)
+{
+    kindleDisponibilità = "Si";
+} else
+{
+    kindleDisponibilità = "No";
+}
+
+if (flessibile)
+{
+    flessibileDisponibilità = "Si";
+} else
+{
+    flessibileDisponibilità = "No";
+}
 
 
-Console.WriteLine("inserisci dimensioni del libro, altezza, lunghezza e profondità");
-float larghezza = float.Parse(Console.ReadLine());
-float lunghezza = float.Parse(Console.ReadLine());
-float profondità = float.Parse(Console.ReadLine());
+Console.WriteLine(@$"--------------LIBRO DI OGGI:{titolo} di {autore}------------
+informazioni generiche:
+ISBN: {isbn}
+Numero delle pagine: {numerodellepagine}
+Peso del libro: {pesodellibro}kg
+Dimensioni del libro: {larghezza}cm x {lunghezza}cm x {profondità
+}cm
 
-Console.WriteLine("inserisci adesso informaizoni di amazon, numero di recensioni");
-int numerodirecensioni = int.Parse(Console.ReadLine());
-
-Console.WriteLine("inserisci valutazione media");
-float valutazionemedia = float.Parse(Console.ReadLine());
-
-Console.WriteLine("è kindle disponibile? inserisci si o no");
-string kindle = Console.ReadLine();
-
-Console.WriteLine("è flessibile la copertina? si o no");
-string flessibile = Console.ReadLine();
-
-
-//Console.WriteLine(@$"--------------LIBRO DI OGGI:{titolo} di {autore}------------
-//informazioni generiche:
-//ISBN: {isbn}
-//Numero delle pagine: {numerodellepagine}
-//Peso del libro: {pesodellibro}kg
-//Dimensioni del libro: {larghezza}cm x {lunghezza}cm x {profondità
-//}cm
-
-//Informazioni Amazon:
-//Numero di recensioni: {numerodirecensioni} recensioni
-//Valutazione media: {valutazionemedia} stelline
-//Kindle disponibile: {kindle}
-//Copertina flessibile disponibile: {flessibile}
-//");
+Informazioni Amazon:
+Numero di recensioni: {numerodirecensioni} recensioni
+Valutazione media: {valutazionemedia} stelline
+Kindle disponibile: {kindleDisponibilità}
+Copertina flessibile disponibile: {flessibileDisponibilità}
+");
